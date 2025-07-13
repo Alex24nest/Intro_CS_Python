@@ -3,7 +3,8 @@
 # Write a program that takes your name as an Input and Outputs the length of your name minus 5.
 
 # Insert code below
-
+name = input("Enter name: ")
+print(len(name) - 5)
 
 
 ####################################################################################
@@ -15,7 +16,9 @@ test_string = "We want to remove the nth character from this string"
 n = 8
 
 # Insert code below
-
+new_string = test_string[:n-1] + test_string[n:]
+print(test_string)
+print(new_string)
 
 
 ####################################################################################
@@ -26,7 +29,10 @@ n = 8
 my_string = "This is my string"  # example string - modify to test
 
 # Insert code below
-
+if len(my_string) > 10 or len(my_string) < 5:
+    print(True)
+else:
+    print(False)
 
 
 
@@ -38,8 +44,8 @@ my_string = "This is my string"  # example string - modify to test
 my_string = "How many times is the letter e in this string?"
 
 # Insert code below
+for letter in my_string:
+    if letter == "e":
+        number_of_es += 1
 
-
-
-
-
+print(number_of_es)
